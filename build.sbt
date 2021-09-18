@@ -16,7 +16,7 @@ inThisBuild(
 
 val commonsettings = Seq(
   scalaVersion := "2.13.6",
-  crossScalaVersions := Seq("2.12.14", "2.13.6")
+  crossScalaVersions := Seq("2.12.15", "2.13.6")
 )
 
 lazy val core = crossProject(JSPlatform, JVMPlatform)
@@ -28,8 +28,8 @@ lazy val core = crossProject(JSPlatform, JVMPlatform)
     libraryDependencies ++=
       Seq(
         "org.typelevel" %%% "cats-kernel" % "2.6.0",
-        "org.scalatest" %%% "scalatest" % "3.2.10" % "test",
-        "org.scalatestplus" %%% "scalacheck-1-15" % "3.2.9.0" % "test"
+        "org.scalatest" %%% "scalatest" % "3.2.8" % "test",
+        "org.scalatestplus" %%% "scalacheck-1-15" % "3.2.10.0" % "test"
       ),
     mimaPreviousArtifacts := Set(
       organization.value %% moduleName.value % "1.1.5"
